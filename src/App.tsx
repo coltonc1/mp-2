@@ -31,7 +31,7 @@ export default function App() {
 
   function ApiCall() {
     async function fetchData(): Promise<void> {
-      const res = await fetch(`http://api.tvmaze.com/search/shows?q=${search}`);
+      const res = await fetch(`https://api.tvmaze.com/search/shows?q=${search}`);
       const resJson = await res.json();
       setData(resJson);
       
