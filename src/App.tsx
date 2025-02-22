@@ -26,7 +26,7 @@ export default function App() {
 
 
   const [data, setData] = useState<TvShowInfo[]>([]);
-  const[search, setSearch] = useState("breaking bad");
+  const[search, setSearch] = useState("");
 
 
   function ApiCall() {
